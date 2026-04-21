@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "steyngun-dav"
+version = "1.0.0"
+description = "Clean & Perfect DAV Practicals"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "statsmodels",
+    "textblob"
+]
+
+[tool.setuptools]
+package-dir = {"" = "Python"}
+packages = [
+    "01_SLR", 
+    "02_MLR", 
+    "03_Logistic", 
+    "04_ARIMA", 
+    "05_Text_Analytics", 
+    "06_Visualization", 
+    "07_Data_Cleaning"
+]
