@@ -21,11 +21,11 @@ dependencies = [
 [tool.setuptools]
 package-dir = {"" = "Python"}
 packages = [
-    "01_SLR", 
-    "02_MLR", 
-    "03_Logistic", 
-    "04_ARIMA", 
-    "05_Text_Analytics", 
-    "06_Visualization", 
-    "07_Data_Cleaning"
+    "slr", 
+    "mlr", 
+    "logistic", 
+    "arima", 
+    "text_analytics", 
+    "visualization", 
+    "data_cleaning"
 ]
