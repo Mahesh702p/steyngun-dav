@@ -83,13 +83,16 @@ df = pd.read_csv("data.csv")
 
 # 1. Scatter (Numeric vs Numeric)
 sns.scatterplot(x=df["col1"], y=df["col2"])
-plt.show()
+plt.savefig("1_scatter.png")
+plt.close()
 
 # 2. Bar (Category Counts)
 sns.countplot(x=df["category"], data=df)
-plt.show()
+plt.savefig("2_bar.png")
+plt.close()
 
 # 3. Correlation Heatmap
 sns.heatmap(df.select_dtypes(include='number').corr(), annot=True)
-plt.show()
+plt.savefig("3_heatmap.png")
+plt.close()
 """

@@ -19,13 +19,7 @@ dependencies = [
 ]
 
 [tool.setuptools]
-package-dir = {"" = "Python"}
-packages = [
-    "slr", 
-    "mlr", 
-    "logistic", 
-    "arima", 
-    "text_analytics", 
-    "visualization", 
-    "data_cleaning"
-]
+packages = ["steyngun_dav"]
+
+[tool.setuptools.package-data]
+"*" = ["*", "*/*", "*/*/*"]
